@@ -562,7 +562,6 @@ public class ArticleTextExtractor {
         }
         return nodes.keySet();
     }
-
     public String cleanTitle(String title) {
         StringBuilder res = new StringBuilder();
 //        int index = title.lastIndexOf("|");
@@ -584,7 +583,6 @@ public class ArticleTextExtractor {
             res.append(part);
             counter++;
         }
-
         return SHelper.innerTrim(res.toString());
     }
 }

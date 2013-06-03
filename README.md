@@ -55,7 +55,7 @@ The disadvantages to Goose are
  // fetcher.setCache(new MapMaker().concurrencyLevel(20).maximumSize(count).
  //    expireAfterWrite(minutes, TimeUnit.MINUTES).makeMap();
 
- JResult res = fetcher.fetchAndExtract(articleUrl, resolveTimeout, true);
+ JResult res = fetcher.fetchAndExtract(articleUrl, resolveTimeout, false);
  String text = res.getText(); 
  String title = res.getTitle(); 
  String imageUrl = res.getImageUrl();
